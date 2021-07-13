@@ -1,96 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Suan Sen's Personal Site</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Stats preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body {
+      background-color: hsl(233, 47%, 7%);
+      font-family: 'Inter', sans-serif;
+    }
+
+    h1 {
+      color: hsl(0, 0%, 100%);
+    }
+
+    p {
+      color: hsla(0, 0%, 100%, 0.75);
+      font-weight: 400;
+      font-size: 15px;
+    }
+
+    .flex-container {
+      background-color: hsl(244, 38%, 16%);
+      flex-wrap: wrap-reverse;
+      justify-content: center;
+      align-self: auto;
+      margin: 20px;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .flex-item {
+      width: 200px;
+      height: 150px;
+
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .footer_Text {
+      color: hsl(0, 0%, 100%);
+
+      font-size: 15px;
+    }
+
+    .insights_Text {
+      color: hsl(277, 64%, 61%);
+    }
+
+    .footer_Text_Desc {
+      color: hsla(0, 0%, 100%, 0.75);
+      text-transform: uppercase;
+
+      font-size: 15px;
+    }
+  </style>
 </head>
 
 <body>
-
-  <table cellspacing="20">
-    <tr>
-      <td><img src="images\Bearger.png" alt="Bearger" height="300"></td>
-      <td>
-        <h1>Suan Sen</h1>
-        <p><em>My first <strong><a href="https://www.klei.com/games/dont-starve-together">website?</a></strong></em></p>
-        <p>I am a beginner Web developer. I like coffee but my wife hates it.</p>
-      </td>
-    </tr>
-  </table>
-
-
-  <hr size="3" noshade>
-  <p><a href="bears.html">Know more about bears</a></p>
-  <p><a href="contact.html">Contact</a></p>
-
-  <hr>
-
-  <!-->Tables</!-->
-  <h3>Bear's fighting power</h3>
-  <table cellspacing="20">
-    <thead>
-      <tr>
-        <th>#</th>
-        <th>Bear name</th>
-        <th>Fighting power</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-        <table cellspacing="10">
-          <tr>
-            <td>1</td>
-            <td>North American Black Bear</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>Brown Bear</td>
-            <td>⭐⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>Polar Bear</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-          <tr>
-            <td>4</td>
-            <td>Asiatic black bear</td>
-            <td>⭐⭐⭐</td>
-          </tr>
-        </table>
-        </td>
-        <td>
-          <table cellspacing="10">
-            <tr>
-              <td>5</td>
-              <td>Andean Bear</td>
-              <td>⭐⭐⭐</td>
-            </tr>
-            <tr>
-              <td>6</td>
-              <td>Panda Bear</td>
-              <td>⭐</td>
-            </tr>
-            <tr>
-              <td>7</td>
-              <td>Sun Bear</td>
-              <td>⭐⭐</td>
-            </tr>
-            <tr>
-              <td>8</td>
-              <td>Bearger</td>
-              <td>⭐⭐⭐⭐⭐</td>
-            </tr>
-          </table>
-        </td>
-      </tr>
-    </tbody>
-    <tfoot>
-    </tfoot>
-  </table>
-<hr>
+  <ul class="flex-container">
+    <li class="flex-item">
+      <h1>Get <span class="insights_Text">insights</span> that help your business grow.</h1>
+      <p>
+        Discover the benefits of data analytics and make better decisions regarding revenue, customer
+        experience, and overall efficiency.
+      </p>
+      <h1>10k+ <span class="footer_Text_Desc">companies</span></h1>
+      <h1>314 <span class="footer_Text_Desc">templates</span></h1>
+      <h1>12m+ <span class="footer_Text_Desc">queries</span></h1>
+    </li>
+    <li class="flex-image">
+      <img src="images\image-header-desktop.jpg" alt="">
+      </div>
+    </li>
+  </ul>
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="#">Your Name Here</a>.
+    </div>
+</body>
 
 </html>
