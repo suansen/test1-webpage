@@ -39,16 +39,7 @@ h2 {
   color: var(--clr-neutral-verylightgrey);
 }
 
-button {
-  /* margin-top: 5em;
-  font-family: var(--ff-400);
-  font-size: 1rem;
-  color:white;
-  background-color: transparent;
-  border-color: white;
-  border-radius: 40%;
-  padding:1em;
-  text-decoration:none; */
+.item-button-one, .item-button-two, .item-button-three{
   margin-top: 5em;
   background-color: transparent;
   border-radius: 16px;
@@ -61,17 +52,19 @@ button {
   font-size: 15px;
   padding: 0.5em 1em;
   text-decoration: none;
+}
 
-  .myButton:hover {
-    background-color: transparent;
-  }
-
-  .myButton:active {
-    position: relative;
-    top: 1px;
-  }
-
-  */
+.item-button-one:hover{
+  background-color: var(--clr-neutral-verylightgrey);
+  color:var(--clr-primary-orange);
+}
+.item-button-two:hover{
+  background-color: var(--clr-neutral-verylightgrey);
+  color:var(--clr-primary-darkcyan);
+}
+.item-button-three:hover{
+  background-color: var(--clr-neutral-verylightgrey);
+  color:var(--clr-primary-verydarkcyan);
 }
 
 .container {
@@ -80,6 +73,7 @@ button {
   justify-content: center;
   align-items: center;
   width: 70%;
+  height: auto;
   border-radius: 0.5em;
 }
 
@@ -89,6 +83,7 @@ button {
 
 .item {
   padding: 2em;
+  align-self: center;
 }
 
 .one {
@@ -103,9 +98,13 @@ button {
   background-color: hsl(179, 100%, 13%);
 }
 
-@media (max-width:375px) {
+@media (max-width:600px) {
   .container {
     flex-direction: column;
+  }
+
+  .item-button-one, .item-button-two, .item-button-three{
+    margin-top: 2em;
   }
 }
 
