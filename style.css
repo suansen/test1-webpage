@@ -1,0 +1,119 @@
+:root {
+  --clr-primary-orange: hsl(31, 77%, 52%);
+  --clr-primary-darkcyan: hsl(184, 100%, 22%);
+  --clr-primary-verydarkcyan: hsl(179, 100%, 13%);
+  --clr-neutral-white: hsla(0, 0%, 100%, 0.75);
+  /*paragraphs*/
+  --clr-neutral-verylightgrey: hsl(0, 0%, 95%);
+  /* background, headings, buttons */
+  --ff-700: "Big Shoulders Display", "cursive";
+  --ff-400: "Lexend Deca", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--ff-400);
+  font-size: 15px;
+  min-height: 100vh;
+  background-color: var(--clr-neutral-verylightgrey);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1, h2, h3, p {
+  margin: 0;
+}
+
+p {
+  color: var(--clr-neutral-white);
+  line-height: 1.4em;
+}
+
+h2 {
+  font-family: var(--ff-700);
+  text-transform: uppercase;
+  font-size: 2em;
+  margin: 1em 0;
+  color: var(--clr-neutral-verylightgrey);
+}
+
+button {
+  /* margin-top: 5em;
+  font-family: var(--ff-400);
+  font-size: 1rem;
+  color:white;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 40%;
+  padding:1em;
+  text-decoration:none; */
+  margin-top: 5em;
+  background-color: transparent;
+  border-radius: 16px;
+  border: 1px solid #1f2f47;
+  border-color: var(--clr-neutral-verylightgrey);
+  display: inline-block;
+  cursor: pointer;
+  color: var(--clr-neutral-verylightgrey);
+  font-family: Arial;
+  font-size: 15px;
+  padding: 0.5em 1em;
+  text-decoration: none;
+
+  .myButton:hover {
+    background-color: transparent;
+  }
+
+  .myButton:active {
+    position: relative;
+    top: 1px;
+  }
+
+  */
+}
+
+.container {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
+  border-radius: 0.5em;
+}
+
+.icon {
+  margin-bottom: 1em;
+}
+
+.item {
+  padding: 2em;
+}
+
+.one {
+  background-color: var(--clr-primary-orange);
+}
+
+.two {
+  background-color: var(--clr-primary-darkcyan);
+}
+
+.three {
+  background-color: hsl(179, 100%, 13%);
+}
+
+@media (max-width:375px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+/* .attribution {
+    font-size: 11px;
+    text-align: center;
+  }
+
+  .attribution a {
+    color: hsl(228, 45%, 44%);
+  } */
