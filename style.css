@@ -1,118 +1,131 @@
 :root {
-  --clr-primary-orange: hsl(31, 77%, 52%);
-  --clr-primary-darkcyan: hsl(184, 100%, 22%);
-  --clr-primary-verydarkcyan: hsl(179, 100%, 13%);
-  --clr-neutral-white: hsla(0, 0%, 100%, 0.75);
-  /*paragraphs*/
-  --clr-neutral-verylightgrey: hsl(0, 0%, 95%);
-  /* background, headings, buttons */
-  --ff-700: "Big Shoulders Display", "cursive";
-  --ff-400: "Lexend Deca", sans-serif;
+  --clr-primary-verydesaturatedblue: hsl(229, 23%, 23%);
+  --clr-primary-darkcyan: hsl(185, 75%, 39%);
+  --clr-primary-darkgreyishblus: hsl(227, 10%, 46%);/ --ff: "Kumbh Sans", sans-serif;
 }
 
 body {
   margin: 0;
   padding: 0;
   font-family: var(--ff-400);
-  font-size: 15px;
+  font-size: 18px;
   min-height: 100vh;
-  background-color: var(--clr-neutral-verylightgrey);
+  background-color: var(--clr-primary-darkcyan);
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: 'Kumbh Sans', sans-serif;
+  font-weight: 400;
+  box-sizing: border-box;
 }
 
 h1, h2, h3, p {
   margin: 0;
 }
 
-p {
-  color: var(--clr-neutral-white);
-  line-height: 1.4em;
-}
-
-h2 {
-  font-family: var(--ff-700);
-  text-transform: uppercase;
-  font-size: 2em;
-  margin: 1em 0;
-  color: var(--clr-neutral-verylightgrey);
-}
-
-.item-button-one, .item-button-two, .item-button-three{
-  margin-top: 5em;
-  background-color: transparent;
-  border-radius: 16px;
-  border: 1px solid #1f2f47;
-  border-color: var(--clr-neutral-verylightgrey);
-  display: inline-block;
-  cursor: pointer;
-  color: var(--clr-neutral-verylightgrey);
-  font-family: Arial;
-  font-size: 15px;
-  padding: 0.5em 1em;
-  text-decoration: none;
-}
-
-.item-button-one:hover{
-  background-color: var(--clr-neutral-verylightgrey);
-  color:var(--clr-primary-orange);
-}
-.item-button-two:hover{
-  background-color: var(--clr-neutral-verylightgrey);
-  color:var(--clr-primary-darkcyan);
-}
-.item-button-three:hover{
-  background-color: var(--clr-neutral-verylightgrey);
-  color:var(--clr-primary-verydarkcyan);
+hr {
+  margin: 0;
+  border-top: 1px solid hsla(227, 10%, 46%, 0.3);
 }
 
 .container {
   display: flex;
-  overflow: hidden;
   justify-content: center;
   align-items: center;
-  width: 70%;
-  height: auto;
-  border-radius: 0.5em;
+  overflow: hidden;
+  flex-direction: column;
+  flex-wrap: wrap;
+  background-color: white;
+  position: relative;
+  border-radius: .5em;
+  box-shadow: 5px 5px 16px 7px rgba(0, 0, 0, 0.17);
 }
 
-.icon {
-  margin-bottom: 1em;
+.top-banner {
+  height: 8em;
+  width: 20em;
+  background-color: red;
+  background-image: url(images/bg-pattern-card.svg);
 }
 
-.item {
-  padding: 2em;
-  align-self: center;
+.victor-photo {
+  border-radius: 50%;
+  border-color: white;
+  border-style: solid;
+  border-width: 5px;
 }
 
-.one {
-  background-color: var(--clr-primary-orange);
+.profile-photo {
+  position: absolute;
+  top: 5em;
 }
 
-.two {
-  background-color: var(--clr-primary-darkcyan);
+.profile-information {
+  margin-top: 5em;
+  font-size: 0.8em;
+  color: var(--clr-primary-verydesaturatedblue);
+  margin-bottom: 2em;
+  width: 100%;
+  text-align: center;
 }
 
-.three {
-  background-color: hsl(179, 100%, 13%);
+.profile-information-name {
+  margin-bottom: 0.8em;
+  font-weight: 700;
 }
 
-@media (max-width:600px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .item-button-one, .item-button-two, .item-button-three{
-    margin-top: 2em;
-  }
+.profile-information-age {
+  margin-bottom: 0.8em;
+  font-weight: 400;
+  color: var(--clr-primary-darkgreyishblus);
+  margin-left: 0.5em;
 }
 
-/* .attribution {
-    font-size: 11px;
-    text-align: center;
-  }
+.profile-stats{
+  margin-bottom:1.5em;
+  width:80%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
 
-  .attribution a {
-    color: hsl(228, 45%, 44%);
-  } */
+.stats-info {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+
+.stats-info-number{
+  font-weight: 700;
+  margin:0.5em;
+}
+
+.stats-info-description{
+  font-weight: 400;
+  color: var(--clr-primary-darkgreyishblus);
+  font-size: .6em;
+  letter-spacing: 0.15em;
+}
+
+
+.location {
+  text-align: center;
+  margin-bottom: 2em;
+}
+
+.top-circle {
+  position: fixed;
+  bottom: 50%;
+  right: 50%;
+  z-index: -1;
+}
+
+.bottom-circle {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  z-index: -1;
+}

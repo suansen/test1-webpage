@@ -4,48 +4,54 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="style.css">
-  <title>Frontend Mentor | 3-column preview card component</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Profile card component</title>
 
 </head>
 
 <body>
-  <div class="container">
-    <div class="item one">
-      <div class="icon">
-        <img src="images\icon-sedans.svg" alt="sedan icon">
-      </div>
-      <h2>Sedans</h2>
-      <p class="car-information">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city
-        or on your next road trip.</p>
-      <button class="item-button-one" type="button" name="button">Learn More</button>
-    </div>
-    <div class="item two">
-      <div class="icon">
-        <img src="images\icon-suvs.svg" alt="suv icon">
-      </div>
-      <h2>SUVs</h2>
-      <p class="car-information">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation
-        and off-road adventures.</p>
-      <button class="item-button-two" type="button" name="button">Learn More</button>
-    </div>
-    <div class="item three">
-      <div class="icon">
-        <img src="images\icon-luxury.svg" alt="luxury car icon">
-      </div>
-      <h2>Luxury</h2>
-      <p class="car-information">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury
-        rental and arrive in style.</p>
 
-      <button class="item-button-three" type="button" name="button">Learn More</button>
+  <main>
+    <div class="container">
+      <div class="top-banner">
+      </div>
+      <div class="profile-photo">
+        <img class="victor-photo" src="images\image-victor.jpg" alt="picture of handsome victor">
+      </div>
+      <div class="profile-information">
+        <h2 class="profile-information-name">Victor Crest <span class="profile-information-age"> 26</span></h2>
+        <div class="location">
+          London
+        </div>
+        <hr>
+      </div>
+      <div class="profile-stats">
+        <div class="stats-info">
+          <div class="stats-info-number">80K</div>
+          <div class="stats-info-description">Followers</div>
+        </div>
+
+
+      <div class="stats-info">
+        <div class="stats-info-number">803K</div>
+        <div class="stats-info-description">Likes</div>
+      </div>
+
+      <div class="stats-info">
+        <div class="stats-info-number">1.4K</div>
+        <div class="stats-info-description">Photos</div>
+      </div>
+      </div>
     </div>
-  </div>
+
+  </main>
+  <img class="top-circle" src="images\bg-pattern-top.svg" alt="top circle">
+  <img class="bottom-circle" src="images\bg-pattern-bottom.svg" alt="bottom circle">
   <!-- <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Your Name Here</a>.
